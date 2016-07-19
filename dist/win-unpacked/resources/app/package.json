@@ -1,0 +1,38 @@
+{
+  "description": "Test.",
+  "name": "test1",
+  "author": "RilRil",
+  "license": "Proprietary",
+  "main": "index.js",
+  "private": true,
+  "version": "0.2.0",
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "express": "^4.13.4",
+    "superagent": "^2.0.0",
+    "ursa": "^0.9.4"
+  },
+  "devDependencies": {
+    "electron-builder": "^5.12.1",
+    "electron-packager": "^7.1.0",
+    "electron-prebuilt": "^1.2.5",
+    "electron-rebuild": "^1.1.5"
+  },
+  "engines": {
+    "node": ">=4.4.0"
+  },
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "build",
+    "debug": "electron --debug index.js",
+    "start": "electron index.js"
+  },
+  "build": {
+    "asar": false,
+    "appId": "test.1",
+    "app-category-type": "public.app-category.developer-tools",
+    "win": {
+      "iconUrl": "https://dl.dropboxusercontent.com/u/4768306/icon.ico"
+    }
+  }
+}

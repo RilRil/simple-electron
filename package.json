@@ -13,9 +13,10 @@
     "ursa": "^0.9.4"
   },
   "devDependencies": {
+    "electron-builder": "^5.12.1",
     "electron-packager": "^7.1.0",
     "electron-prebuilt": "^1.2.5",
-    "electron-builder": "^5.12.1"
+    "electron-rebuild": "^1.1.5"
   },
   "engines": {
     "node": ">=4.4.0"
